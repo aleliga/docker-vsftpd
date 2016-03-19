@@ -2,7 +2,7 @@
 # VERSION               0.1
 FROM debian
 
-MAINTAINER Alessio Ligabue  "ml@alessioligabue.it"
+MAINTAINER Alessio Ligabue  "info@alessioligabue.it"
 # thank you to Davide Lucchesi  "davide@lucchesi.nl"
 
 
