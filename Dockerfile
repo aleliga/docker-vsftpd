@@ -24,10 +24,12 @@ RUN echo "allow_writeable_chroot=YES" >> /etc/vsftpd.conf
 #RUN echo "listen_ipv6=YES" >> /etc/vsftpd.conf
 
 # crea link simbolici x il database degli user
+RUN mkdir -p /etc/vsftpd/
 RUN ln -s /etc/vsftpd_login.db /etc/vsftpd/vsftpd_login.db
 
 # aggiunge gruppo ftp e user virtual e cambia owner a dir dati
 RUN groupadd -r ftp && useradd -r -g ftp virtual
+RUN mkdir -p /home/ftp/
 RUN chown virtual.ftp /home/ftp/
 
 RUN mkdir -p /var/run/vsftpd/empty
