@@ -34,7 +34,8 @@ RUN chown virtual.ftp /home/ftp/
 
 RUN mkdir -p /var/run/vsftpd/empty
 
-VOLUME /etc
+VOLUME /home/ftp
+VOLUME /etc/vsftpd/
 
 EXPOSE 21
 
