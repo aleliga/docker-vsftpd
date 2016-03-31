@@ -28,7 +28,7 @@ RUN mkdir -p /etc/vsftpd/
 RUN ln -s /etc/vsftpd_login.db /etc/vsftpd/vsftpd_login.db
 
 # aggiunge gruppo ftp e user virtual e cambia owner a dir dati
-RUN groupadd -r ftp && useradd -r -g ftp virtual
+RUN useradd -r -g ftp virtual
 RUN mkdir -p /home/ftp/
 RUN chown virtual.ftp /home/ftp/
 
