@@ -1,6 +1,8 @@
 # docker-vsftpd
 Creazione di un server vsftpd con docker
 
+# non mantenuto
+
 # Utenti
 Gli utenti sono virtuali e mantenuti nel file vsftpd/vsftpd_login.db 
 che sara montato come volume esterno
